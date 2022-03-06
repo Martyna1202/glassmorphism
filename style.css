@@ -1,0 +1,122 @@
+@import url(node_modules/@fortawesome/fontawesome-free/css/all.min.css);
+
+/* dunkler Hintergrund */
+body {
+    background-color: rgb(55, 55, 55);
+}
+
+/* Nav-Leiste */
+nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+}
+
+/* Schrift in der Nav-Leiste */
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff8c00;
+}
+
+/* Überschriften mit Hintergrund */
+h1, h2 {
+    background: 
+        linear-gradient(
+            90deg, 
+            #ff8c00,
+            rgb(252, 194, 4)15%, 
+            rgb(0, 224, 75)40%, 
+            rgb(0, 195, 255)60%, 
+            rgb(100, 148, 237) 80%, 
+            #f83e9b);
+    color: #f83e9b;
+    border: 2px solid white;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+}
+
+/* div um die zweite Überschrift incl. Icons */
+.test {
+    display: inline-block;
+    margin: 0 15%;
+}
+
+h2 {
+    color: rgb(55, 55, 55);
+    display: inline;
+}
+
+div > .fa-dog {
+    /* content: 'f6d3'; */
+    color: rgb(100, 148, 237);
+    font-size: 4rem;
+}
+
+h2 ~ .fa-otter {
+    /* content: 'f700'; */
+    color: rgb(100, 148, 237);
+    font-size: 4rem;
+}
+
+
+/* Box mit Farbverlauf */
+.bg {
+    height: 70vh;
+    width: 70vw;
+    border: 3px solid white;
+    margin: 0 auto 15px;
+    background:
+        linear-gradient(
+            90deg, 
+            #ff8c00,
+            rgb(252, 194, 4)15%, 
+            rgb(0, 224, 75)40%, 
+            rgb(0, 195, 255)60%, 
+            rgb(100, 148, 237) 80%, 
+            #f83e9b);
+}
+
+/* beide kleinen Boxen in der Mitte */
+.white-box {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.301);
+    position: absolute;
+    border-radius: 10%;
+}
+
+/* "hintere" Box mit kleinerem Schatten */
+.one {
+    top: 35%;
+    left: 40%;
+    box-shadow: 10px -10px 10px black;
+}
+
+/* "obere" Box mit größerem Schatten für höheren Schwebeeffekt */
+.two {
+    top: 43%;
+    left: 45%;
+    backdrop-filter: blur(3px);
+    box-shadow: 15px -10px 20px black;
+    /* Text in der Box */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline;
+    color: #f83e9b;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px -5px 10px black;
+    padding: 10px 10px 0;
+}
+
+/* erste Zeile Text: unterstrichenes "I love colors"  */
+.first-love {
+    margin: 0;
+    text-decoration: underline;
+    word-break: break-all;
+    padding: 10px 10px 20px;
+}
